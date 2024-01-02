@@ -1,0 +1,35 @@
+library remix_ic;
+
+import 'package:flutter/widgets.dart';
+import 'package:remix_ic/src/models/models.dart';
+
+part 'remix_icon_map.dart';
+
+/// {@template remix_ic}
+/// RemixIcon
+/// {@endtemplate}
+class RemixIcon {
+  /// {@macro remix_ic}
+  RemixIcon._();
+
+  /// {@macro remix_ic}
+  ///
+  /// Only for testing
+  @visibleForTesting
+  static final RemixIcon constructor = RemixIcon._();
+
+<%  /// [Remix Icon](https://remixicon.com/) - "__ICON_IDENTIFIER__"
+  static const IconData __ICON_NAME__ = RemixIconData(__CODE_POINT__); 
+%>
+  /// Returns a [IconData] for the given key
+  static IconData? fromString(String key) {
+    final codePoint = iconMap[key.paramCase];
+    if (codePoint == null) return null;
+    return RemixIconData(codePoint);
+  }
+
+  /// Returns a list of all the icon identifiers
+  static List<String> getIconsIdentifier() {
+    return iconMap.keys.toList();
+  }
+}
