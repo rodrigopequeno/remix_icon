@@ -6,7 +6,7 @@ import 'package:remix_ic/src/models/models.dart';
 part 'remix_icon_map.dart';
 
 /// {@template remix_ic}
-/// RemixIcon
+/// [Remix Icon](https://remixicon.com/)
 /// {@endtemplate}
 class RemixIcon {
   /// {@macro remix_ic}
@@ -18,7 +18,7 @@ class RemixIcon {
   @visibleForTesting
   static final RemixIcon constructor = RemixIcon._();
 
-<%  /// [Remix Icon](https://remixicon.com/) - "__ICON_IDENTIFIER__"
+<%  /// [__ICON_IDENTIFIER__](https://remixicon.com/icon/__ICON_IDENTIFIER__)
   static const IconData __ICON_NAME__ = RemixIconData(__CODE_POINT__); 
 %>
   /// Returns a [IconData] for the given key
