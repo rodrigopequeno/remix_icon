@@ -1,7 +1,7 @@
 part of 'models.dart';
 
-const _fontFamily = 'RemixIcons';
-const _fontPackage = 'flutter_remix_icons';
+const _fontFamily = 'Remix';
+const _fontPackage = 'remix_ic';
 
 /// {@template remix_ic_data}
 /// Icon Data for Remix Icon

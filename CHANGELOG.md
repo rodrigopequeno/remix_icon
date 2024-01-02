@@ -1,3 +1,7 @@
+## 0.0.4
+
+- fix: import icon ttf
+
 ## 0.0.3
 
 - fix: readme and example

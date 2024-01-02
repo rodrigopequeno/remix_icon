@@ -1,6 +1,6 @@
 name: remix_ic
 description: The complete Remix icon pack available on Flutter.
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/rodrigopequeno/remix_icon
 
 environment:
@@ -18,3 +18,9 @@ dev_dependencies:
     sdk: flutter
   mocktail: ^1.0.2
   very_good_analysis: ^5.1.0
+
+flutter:
+  fonts:
+    - family: Remix
+      fonts:
+        - asset: lib/fonts/remixicon.ttf
