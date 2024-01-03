@@ -1,3 +1,7 @@
+## 0.0.5
+
+- fix: remove fromString
+
 ## 0.0.4
 
 - fix: import icon ttf

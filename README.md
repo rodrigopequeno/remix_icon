@@ -8,13 +8,17 @@ This package is a port of [Remix Icon](https://remixicon.com).
 ## Installation 💻
 
 ```yaml
-flutter pub add remix_icon_icons
+flutter pub add remix_ic
 ```
 
 ## Usage
 
 ```dart
 Icon(RemixIcon.flutterLine)
+// or
+Icon(Remix.flutterLine)
+// or
+Icon(FlutterRemix.flutterLine)
 ```
 
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
