@@ -37,11 +37,6 @@ Future<void> main() async {
     pathDestiny: './lib/src/remix_icon.dart',
     icons: info.icons,
   );
-  await generateCode(
-    pathTemplate: './tools/templates/remix_icon_map.dart.template',
-    pathDestiny: './lib/src/remix_icon_map.dart',
-    icons: info.icons,
-  );
   File('./tools/$_fontFileName').renameSync('./lib/fonts/$_fontFileName');
   File('./tools/$_glyphFileName').deleteSync();
   exit(0);

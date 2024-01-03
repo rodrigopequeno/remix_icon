@@ -1,7 +1,0 @@
-part of 'remix_icon.dart';
-
-/// Map with all remix icons.
-@visibleForTesting
-final iconMap = {
-<%  '__ICON_IDENTIFIER__': __CODE_POINT__,%>
-};
