@@ -21,10 +21,10 @@ jobs:
             script: |
                 tagname=$(echo ${{ github.ref }} | sed -n 's/refs\/heads\/release\/v\(.*\)/\1/p')
                 echo "Creating tag $tagname"
-                github.rest.git.createRef({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    ref: 'refs/tags/$tagname',
-                    sha: context.sha
-                })
+        # github.rest.git.createRef({
+        #     owner: context.repo.owner,
+        #     repo: context.repo.repo,
+        #     ref: 'refs/tags/v$tagname',
+        #     sha: context.sha
+        # })
         
