@@ -1,0 +1,82 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+name: Get new version RemixIcon
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+on: 
+    schedule:
+    - cron: "0 0 05,15,25 * *"
+    pull_request:
+    
+jobs:
+   build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get latest version
+        id: get_latest_version
+        run: |
+            latest_version=$(curl -s https://api.github.com/repos/Remix-Design/RemixIcon/releases/latest | jq -r '.tag_name')
+            echo "latest_version=$latest_version" >> $GITHUB_OUTPUT
+            echo $latest_version
+
+      - name: Check latest version
+        run: |
+          if [[ -z "${{ steps.get_latest_version.outputs.latest_version }}" ]]; then
+            echo "Latest version is empty, skipping build step."
+            exit 0
+          fi
+          echo "Latest version is not empty, proceeding with build."
+
+      - uses: actions/checkout@v3
+
+      # Note: This workflow uses the latest stable version of the Dart SDK.
+      # You can specify other versions if desired, see documentation here:
+      # https://github.com/dart-lang/setup-dart/blob/main/README.md
+      # - uses: dart-lang/setup-dart@v1
+      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+
+      - name: 🐦 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.19.6
+          channel: stable
+          cache: true
+          cache-key: flutter-:os:-:channel:-:version:-:arch:-:hash:-${{ hashFiles('**/pubspec.lock') }}
+
+      - name: Install dependencies
+        run: flutter pub get
+          
+      - name: Generate
+        run: dart run tools/generate.dart
+
+      # Uncomment this step to verify the use of 'dart format' on each commit.
+      # - name: Verify formatting
+      #   run: dart format --output=none --set-exit-if-changed .
+
+      # Consider passing '--fatal-infos' for slightly stricter analysis.
+      - name: Analyze project source
+        run: flutter analyze
+
+      # Your project will need to have tests in test/ and a dependency on
+      # package:test for this step to succeed. Note that Flutter projects will
+      # want to change this to 'flutter test'.
+      - name: Run tests
+        run: flutter test
+    
+      - uses: EndBug/add-and-commit@v9
+        with:
+              message: 'changes of ${{ steps.get_latest_version.outputs.latest_version }}'
+              committer_name: GitHub Actions
+              committer_email: actions@github.com
+              new_branch: ${{ steps.get_latest_version.outputs.latest_version }}
+
+      - name: Create pull request
+        run: gh pr create -B main -H ${{ steps.get_latest_version.outputs.latest_version }} --title 'New version by ${{ steps.get_latest_version.outputs.latest_version }}' --body 'Created by Github action'
+        env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
