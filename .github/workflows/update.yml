@@ -27,7 +27,7 @@ jobs:
     
     build:
         needs: get_latest_version
-        runs-on: ubuntu-latest\
+        runs-on: ubuntu-latest
 
         steps:
           - name: Check latest version
