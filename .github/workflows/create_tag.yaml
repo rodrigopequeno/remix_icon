@@ -16,7 +16,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: Create tag
-          uses: actions/github-script@v5
+          uses: actions/github-script@v7
           with:
             script: |
                 tagname=$(echo ${{ github.ref }} | sed -n 's/refs\/heads\/release\/v\(.*\)/\1/p')
