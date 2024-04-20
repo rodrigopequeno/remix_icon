@@ -15,16 +15,17 @@ jobs:
         # if: github.event.pull_request.merged == true
         runs-on: ubuntu-latest
         steps:
+        - id: get_version
+          uses: baileyherbert/version-action@v3
+    
         - name: Create tag
           uses: actions/github-script@v7
           with:
             script: |
-                tagname=$(echo ${{ github.ref }} | sed -n 's/refs\/heads\/release\/v\(.*\)/\1/p')
-                echo "Creating tag $tagname"
-        # github.rest.git.createRef({
-        #     owner: context.repo.owner,
-        #     repo: context.repo.repo,
-        #     ref: 'refs/tags/v$tagname',
-        #     sha: context.sha
-        # })
+                github.rest.git.createRef({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    ref: 'refs/tags/${{ steps.get_version.outputs.version }}',
+                    sha: context.sha
+                })
         
