@@ -12,6 +12,7 @@ concurrency:
 on: 
     schedule:
     - cron: "0 0 05,15,25 * *"
+    pull_request:
     
 jobs:
     get_latest_version:
