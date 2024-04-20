@@ -1,16 +1,18 @@
 name: Create tag
 
 on:
-    pull_request_target:
-        types:
-        - closed
-        - opened
+    # pull_request_target:
+    #     types:
+    #     - closed
+    #     branches:
+    #     - 'release/v*'
+    push:
         branches:
         - 'release/v*'
 
 jobs:
     if_merged:
-        if: github.event.pull_request.merged == true
+        # if: github.event.pull_request.merged == true
         runs-on: ubuntu-latest
         steps:
         - name: Create tag
