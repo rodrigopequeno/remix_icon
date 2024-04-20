@@ -14,26 +14,35 @@ on:
     pull_request:
     
 jobs:
-   build:
+  get_data:
     runs-on: ubuntu-latest
-
+    outputs:
+      latest_version: ${{ steps.get_latest_version.outputs.latest_version }}
+      tag: ${{ steps.previoustag.outputs.tag }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
+      - name: 'Get Previous tag'
+        id: previoustag
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+        with:
+          fallback: 1.0.0 # Optional fallback tag to use when no tag can be found
+          #workingDirectory: another/path/where/a/git/repo/is/checked/out # Optional alternative working directory
       - name: Get latest version
         id: get_latest_version
         run: |
-            latest_version=$(curl -s https://api.github.com/repos/Remix-Design/RemixIcon/releases/latest | jq -r '.tag_name')
-            echo "latest_version=$latest_version" >> $GITHUB_OUTPUT
-            echo $latest_version
+          latest_version=$(curl -s https://api.github.com/repos/Remix-Design/RemixIcon/releases/latest | jq -r '.tag_name')
+          echo "latest_version=$latest_version" >> $GITHUB_OUTPUT
+          echo $latest_version
 
-      - name: Check latest version
-        run: |
-          if [[ -z "${{ steps.get_latest_version.outputs.latest_version }}" ]]; then
-            echo "Latest version is empty, skipping build step."
-            exit 0
-          fi
-          echo "Latest version is not empty, proceeding with build."
+  build:
+    needs: [get_data]
+    if: needs.get_data.outputs.latest_version != needs.get_data.outputs.tag
+    runs-on: ubuntu-latest
 
-      - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v4
 
       # Note: This workflow uses the latest stable version of the Dart SDK.
       # You can specify other versions if desired, see documentation here:
@@ -71,12 +80,12 @@ jobs:
     
       - uses: EndBug/add-and-commit@v9
         with:
-              message: 'changes of ${{ steps.get_latest_version.outputs.latest_version }}'
+              message: '${{ steps.get_latest_version.outputs.latest_version }}'
               committer_name: GitHub Actions
               committer_email: actions@github.com
               new_branch: ${{ steps.get_latest_version.outputs.latest_version }}
 
       - name: Create pull request
-        run: gh pr create -B main -H ${{ steps.get_latest_version.outputs.latest_version }} --title 'New version by ${{ steps.get_latest_version.outputs.latest_version }}' --body 'Created by Github action'
+        run: gh pr create -B main -H ${{ steps.get_latest_version.outputs.latest_version }} --title '${{ steps.get_latest_version.outputs.latest_version }}' --body 'Created by Github action'
         env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
