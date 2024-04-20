@@ -22,6 +22,7 @@ jobs:
               id: get_latest_version
               run: |
                echo "::set-output name=latest_version::$(curl -s https://api.github.com/repos/Remix-Design/RemixIcon/releases/latest | jq -r '.tag_name')"
+               echo $latest_version
     
     build:
         needs: get_latest_version
