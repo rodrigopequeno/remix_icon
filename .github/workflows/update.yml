@@ -85,6 +85,6 @@ jobs:
               new_branch: release/${{ needs.get_data.outputs.latest_version }}
 
       - name: Create pull request
-        run: gh pr create -B main -H $ 'release/{{ needs.get_data.outputs.latest_version }}' --title '${{ needs.get_data.outputs.latest_version }}' --body 'Created by Github action'
+        run: gh pr create -B main -H release/${{ needs.get_data.outputs.latest_version }} --title '${{ needs.get_data.outputs.latest_version }}' --body 'Created by Github action'
         env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
