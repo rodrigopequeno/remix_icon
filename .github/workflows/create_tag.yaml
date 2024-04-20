@@ -1,0 +1,23 @@
+name: Create tag
+
+on:
+    pull_request_target:
+        types:
+        - closed
+        - opened
+        branches:
+        - 'release/v*'
+
+jobs:
+    if_merged:
+        if: github.event.pull_request.merged == true
+        runs-on: ubuntu-latest
+        steps:
+        - name: Create tag
+          run: |
+                if [[ ${{ github.ref }} =~ ^refs/heads/release/v(.*)$ ]]; then
+                    tag=$(echo ${{ github.ref }} | sed -n 's/refs\/heads\/release\/v\(.*\)/\1/p')
+                    git tag $tag
+                    git push origin $tag
+                fi
+        
