@@ -7,6 +7,27 @@ on:
 
 jobs:
   publish:
+    name: 'Publish to pub.dev'
     permissions:
-      id-token: write
-    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+      id-token: write # This is required for requesting the JWT
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - uses: actions/checkout@v4
+      # Setup Dart SDK with JWT token
+      - uses: dart-lang/setup-dart@fedb1266e91cf51be2fdb382869461a434b920a3
+      - name: 🐦 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.19.6
+          channel: stable
+          cache: true
+          cache-key: flutter-:os:-:channel:-:version:-:arch:-:hash:-${{ hashFiles('**/pubspec.lock') }}
+      # Minimal package setup and dry run checks.
+      - name: Install dependencies
+        run: flutter pub get
+      - name: Publish - dry run
+        run: dart pub publish --dry-run
+      # Publishing...
+      - name: Publish to pub.dev
+        run: dart pub publish -f
