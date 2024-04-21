@@ -12,7 +12,7 @@ on:
     schedule:
     - cron: "0 0 05,15,25 * *"
     workflow_dispatch:
-      
+
 jobs:
   get_data:
     runs-on: ubuntu-latest
@@ -83,6 +83,10 @@ jobs:
               committer_name: GitHub Actions
               committer_email: actions@github.com
               new_branch: release/${{ needs.get_data.outputs.latest_version }}
+              
+      - name: Change version in pubspec.yaml
+        run: |
+          sed -i "s|version: .*|version: ${{ needs.get_data.outputs.latest_version }}|" pubspec.yaml
 
       - name: Create pull request
         run: gh pr create -B main -H release/${{ needs.get_data.outputs.latest_version }} --title '${{ needs.get_data.outputs.latest_version }}' --body 'Created by Github action'

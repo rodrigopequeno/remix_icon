@@ -1,3 +1,6 @@
+If the version is not listed in this changelog, it means that there were no changes in the internal code of the package, only changes in the available icons. The icon changes can be accessed in [Releases](https://github.com/Remix-Design/RemixIcon/releases)
+
+
 ## 0.0.5
 
 - fix: remove fromString
