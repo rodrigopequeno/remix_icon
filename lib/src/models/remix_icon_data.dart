@@ -11,8 +11,10 @@ class RemixIconData extends IconData {
   ///
   /// [codePoint] is the unicode of the icon
   const RemixIconData(super.codePoint)
+      // coverage:ignore-start
       : super(
           fontFamily: _fontFamily,
           fontPackage: _fontPackage,
         );
+  // coverage:ignore-end
 }
