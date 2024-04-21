@@ -63,6 +63,10 @@ jobs:
       - name: Generate
         run: dart run tools/generate.dart
 
+      - name: Change version in pubspec.yaml
+        run: |
+          sed -i "s|version: .*|version: ${{ needs.get_data.outputs.latest_version }}|" pubspec.yaml
+
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
       #   run: dart format --output=none --set-exit-if-changed .
@@ -84,10 +88,6 @@ jobs:
               committer_email: actions@github.com
               new_branch: release/${{ needs.get_data.outputs.latest_version }}
               
-      - name: Change version in pubspec.yaml
-        run: |
-          sed -i "s|version: .*|version: ${{ needs.get_data.outputs.latest_version }}|" pubspec.yaml
-
       - name: Create pull request
         run: gh pr create -B main -H release/${{ needs.get_data.outputs.latest_version }} --title '${{ needs.get_data.outputs.latest_version }}' --body 'Created by Github action'
         env:
