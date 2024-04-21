@@ -65,7 +65,9 @@ jobs:
 
       - name: Change version in pubspec.yaml
         run: |
-          sed -i "s|version: .*|version: ${{ needs.get_data.outputs.latest_version }}|" pubspec.yaml
+          latest_version=${{ needs.get_data.outputs.latest_version }}
+          version_without_v=${latest_version#v}
+          sed -i "s|version: .*|version: $version_without_v|" pubspec.yaml
 
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
