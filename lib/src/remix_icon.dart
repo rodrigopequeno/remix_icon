@@ -8560,6 +8560,132 @@ class RemixIcon {
   /// [weight-line](https://remixicon.com/icon/weight-line)
   static const IconData weightLine = RemixIconData(0xF522);
 
+  /// [book-shelf-fill](https://remixicon.com/icon/book-shelf-fill)
+  static const IconData bookShelfFill = RemixIconData(0xF523);
+
+  /// [book-shelf-line](https://remixicon.com/icon/book-shelf-line)
+  static const IconData bookShelfLine = RemixIconData(0xF524);
+
+  /// [brain-2-fill](https://remixicon.com/icon/brain-2-fill)
+  static const IconData brain2Fill = RemixIconData(0xF525);
+
+  /// [brain-2-line](https://remixicon.com/icon/brain-2-line)
+  static const IconData brain2Line = RemixIconData(0xF526);
+
+  /// [chat-search-fill](https://remixicon.com/icon/chat-search-fill)
+  static const IconData chatSearchFill = RemixIconData(0xF527);
+
+  /// [chat-search-line](https://remixicon.com/icon/chat-search-line)
+  static const IconData chatSearchLine = RemixIconData(0xF528);
+
+  /// [chat-unread-fill](https://remixicon.com/icon/chat-unread-fill)
+  static const IconData chatUnreadFill = RemixIconData(0xF529);
+
+  /// [chat-unread-line](https://remixicon.com/icon/chat-unread-line)
+  static const IconData chatUnreadLine = RemixIconData(0xF52A);
+
+  /// [collapse-horizontal-fill](https://remixicon.com/icon/collapse-horizontal-fill)
+  static const IconData collapseHorizontalFill = RemixIconData(0xF52B);
+
+  /// [collapse-horizontal-line](https://remixicon.com/icon/collapse-horizontal-line)
+  static const IconData collapseHorizontalLine = RemixIconData(0xF52C);
+
+  /// [collapse-vertical-fill](https://remixicon.com/icon/collapse-vertical-fill)
+  static const IconData collapseVerticalFill = RemixIconData(0xF52D);
+
+  /// [collapse-vertical-line](https://remixicon.com/icon/collapse-vertical-line)
+  static const IconData collapseVerticalLine = RemixIconData(0xF52E);
+
+  /// [dna-fill](https://remixicon.com/icon/dna-fill)
+  static const IconData dnaFill = RemixIconData(0xF52F);
+
+  /// [dna-line](https://remixicon.com/icon/dna-line)
+  static const IconData dnaLine = RemixIconData(0xF530);
+
+  /// [dropper-fill](https://remixicon.com/icon/dropper-fill)
+  static const IconData dropperFill = RemixIconData(0xF531);
+
+  /// [dropper-line](https://remixicon.com/icon/dropper-line)
+  static const IconData dropperLine = RemixIconData(0xF532);
+
+  /// [expand-diagonal-s-2-fill](https://remixicon.com/icon/expand-diagonal-s-2-fill)
+  static const IconData expandDiagonalS2Fill = RemixIconData(0xF533);
+
+  /// [expand-diagonal-s-2-line](https://remixicon.com/icon/expand-diagonal-s-2-line)
+  static const IconData expandDiagonalS2Line = RemixIconData(0xF534);
+
+  /// [expand-diagonal-s-fill](https://remixicon.com/icon/expand-diagonal-s-fill)
+  static const IconData expandDiagonalSFill = RemixIconData(0xF535);
+
+  /// [expand-diagonal-s-line](https://remixicon.com/icon/expand-diagonal-s-line)
+  static const IconData expandDiagonalSLine = RemixIconData(0xF536);
+
+  /// [expand-horizontal-fill](https://remixicon.com/icon/expand-horizontal-fill)
+  static const IconData expandHorizontalFill = RemixIconData(0xF537);
+
+  /// [expand-horizontal-line](https://remixicon.com/icon/expand-horizontal-line)
+  static const IconData expandHorizontalLine = RemixIconData(0xF538);
+
+  /// [expand-horizontal-s-fill](https://remixicon.com/icon/expand-horizontal-s-fill)
+  static const IconData expandHorizontalSFill = RemixIconData(0xF539);
+
+  /// [expand-horizontal-s-line](https://remixicon.com/icon/expand-horizontal-s-line)
+  static const IconData expandHorizontalSLine = RemixIconData(0xF53A);
+
+  /// [expand-vertical-fill](https://remixicon.com/icon/expand-vertical-fill)
+  static const IconData expandVerticalFill = RemixIconData(0xF53B);
+
+  /// [expand-vertical-line](https://remixicon.com/icon/expand-vertical-line)
+  static const IconData expandVerticalLine = RemixIconData(0xF53C);
+
+  /// [expand-vertical-s-fill](https://remixicon.com/icon/expand-vertical-s-fill)
+  static const IconData expandVerticalSFill = RemixIconData(0xF53D);
+
+  /// [expand-vertical-s-line](https://remixicon.com/icon/expand-vertical-s-line)
+  static const IconData expandVerticalSLine = RemixIconData(0xF53E);
+
+  /// [gemini-fill](https://remixicon.com/icon/gemini-fill)
+  static const IconData geminiFill = RemixIconData(0xF53F);
+
+  /// [gemini-line](https://remixicon.com/icon/gemini-line)
+  static const IconData geminiLine = RemixIconData(0xF540);
+
+  /// [reset-left-fill](https://remixicon.com/icon/reset-left-fill)
+  static const IconData resetLeftFill = RemixIconData(0xF541);
+
+  /// [reset-left-line](https://remixicon.com/icon/reset-left-line)
+  static const IconData resetLeftLine = RemixIconData(0xF542);
+
+  /// [reset-right-fill](https://remixicon.com/icon/reset-right-fill)
+  static const IconData resetRightFill = RemixIconData(0xF543);
+
+  /// [reset-right-line](https://remixicon.com/icon/reset-right-line)
+  static const IconData resetRightLine = RemixIconData(0xF544);
+
+  /// [stairs-fill](https://remixicon.com/icon/stairs-fill)
+  static const IconData stairsFill = RemixIconData(0xF545);
+
+  /// [stairs-line](https://remixicon.com/icon/stairs-line)
+  static const IconData stairsLine = RemixIconData(0xF546);
+
+  /// [telegram-2-fill](https://remixicon.com/icon/telegram-2-fill)
+  static const IconData telegram2Fill = RemixIconData(0xF547);
+
+  /// [telegram-2-line](https://remixicon.com/icon/telegram-2-line)
+  static const IconData telegram2Line = RemixIconData(0xF548);
+
+  /// [triangular-flag-fill](https://remixicon.com/icon/triangular-flag-fill)
+  static const IconData triangularFlagFill = RemixIconData(0xF549);
+
+  /// [triangular-flag-line](https://remixicon.com/icon/triangular-flag-line)
+  static const IconData triangularFlagLine = RemixIconData(0xF54A);
+
+  /// [user-minus-fill](https://remixicon.com/icon/user-minus-fill)
+  static const IconData userMinusFill = RemixIconData(0xF54B);
+
+  /// [user-minus-line](https://remixicon.com/icon/user-minus-line)
+  static const IconData userMinusLine = RemixIconData(0xF54C);
+
   /// {@macro remix_ic}
   ///
   /// Only for testing
