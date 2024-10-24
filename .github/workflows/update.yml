@@ -63,6 +63,12 @@ jobs:
       - name: Generate
         run: dart run tools/generate.dart
 
+      - name: Update changelog
+        run: |
+          latest_version=${{ needs.get_data.outputs.latest_version }}
+          version_without_v=${latest_version#v}
+          dart tools/update_changelog.dart $version_without_v
+
       - name: Change version in pubspec.yaml
         run: |
           latest_version=${{ needs.get_data.outputs.latest_version }}
