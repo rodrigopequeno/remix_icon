@@ -8959,6 +8959,117 @@ class RemixIcon {
   /// [voice-ai-line](https://remixicon.com/icon/voice-ai-line)
   static const IconData voiceAiLine = RemixIconData(0xF5A7);
 
+  /// [ai-generate-2](https://remixicon.com/icon/ai-generate-2)
+  static const IconData aiGenerate2 = RemixIconData(0xF5A8);
+
+  /// [ai-generate-text](https://remixicon.com/icon/ai-generate-text)
+  static const IconData aiGenerateText = RemixIconData(0xF5A9);
+
+  /// [anthropic-fill](https://remixicon.com/icon/anthropic-fill)
+  static const IconData anthropicFill = RemixIconData(0xF5AA);
+
+  /// [anthropic-line](https://remixicon.com/icon/anthropic-line)
+  static const IconData anthropicLine = RemixIconData(0xF5AB);
+
+  /// [apps-2-ai-fill](https://remixicon.com/icon/apps-2-ai-fill)
+  static const IconData apps2AiFill = RemixIconData(0xF5AC);
+
+  /// [apps-2-ai-line](https://remixicon.com/icon/apps-2-ai-line)
+  static const IconData apps2AiLine = RemixIconData(0xF5AD);
+
+  /// [camera-lens-ai-fill](https://remixicon.com/icon/camera-lens-ai-fill)
+  static const IconData cameraLensAiFill = RemixIconData(0xF5AE);
+
+  /// [camera-lens-ai-line](https://remixicon.com/icon/camera-lens-ai-line)
+  static const IconData cameraLensAiLine = RemixIconData(0xF5AF);
+
+  /// [clapperboard-ai-fill](https://remixicon.com/icon/clapperboard-ai-fill)
+  static const IconData clapperboardAiFill = RemixIconData(0xF5B0);
+
+  /// [clapperboard-ai-line](https://remixicon.com/icon/clapperboard-ai-line)
+  static const IconData clapperboardAiLine = RemixIconData(0xF5B1);
+
+  /// [claude-fill](https://remixicon.com/icon/claude-fill)
+  static const IconData claudeFill = RemixIconData(0xF5B2);
+
+  /// [claude-line](https://remixicon.com/icon/claude-line)
+  static const IconData claudeLine = RemixIconData(0xF5B3);
+
+  /// [closed-captioning-ai-fill](https://remixicon.com/icon/closed-captioning-ai-fill)
+  static const IconData closedCaptioningAiFill = RemixIconData(0xF5B4);
+
+  /// [closed-captioning-ai-line](https://remixicon.com/icon/closed-captioning-ai-line)
+  static const IconData closedCaptioningAiLine = RemixIconData(0xF5B5);
+
+  /// [dvd-ai-fill](https://remixicon.com/icon/dvd-ai-fill)
+  static const IconData dvdAiFill = RemixIconData(0xF5B6);
+
+  /// [dvd-ai-line](https://remixicon.com/icon/dvd-ai-line)
+  static const IconData dvdAiLine = RemixIconData(0xF5B7);
+
+  /// [film-ai-fill](https://remixicon.com/icon/film-ai-fill)
+  static const IconData filmAiFill = RemixIconData(0xF5B8);
+
+  /// [film-ai-line](https://remixicon.com/icon/film-ai-line)
+  static const IconData filmAiLine = RemixIconData(0xF5B9);
+
+  /// [font-size-ai](https://remixicon.com/icon/font-size-ai)
+  static const IconData fontSizeAi = RemixIconData(0xF5BA);
+
+  /// [mixtral-fill](https://remixicon.com/icon/mixtral-fill)
+  static const IconData mixtralFill = RemixIconData(0xF5BB);
+
+  /// [mixtral-line](https://remixicon.com/icon/mixtral-line)
+  static const IconData mixtralLine = RemixIconData(0xF5BC);
+
+  /// [movie-2-ai-fill](https://remixicon.com/icon/movie-2-ai-fill)
+  static const IconData movie2AiFill = RemixIconData(0xF5BD);
+
+  /// [movie-2-ai-line](https://remixicon.com/icon/movie-2-ai-line)
+  static const IconData movie2AiLine = RemixIconData(0xF5BE);
+
+  /// [mv-ai-fill](https://remixicon.com/icon/mv-ai-fill)
+  static const IconData mvAiFill = RemixIconData(0xF5BF);
+
+  /// [mv-ai-line](https://remixicon.com/icon/mv-ai-line)
+  static const IconData mvAiLine = RemixIconData(0xF5C0);
+
+  /// [perplexity-fill](https://remixicon.com/icon/perplexity-fill)
+  static const IconData perplexityFill = RemixIconData(0xF5C1);
+
+  /// [perplexity-line](https://remixicon.com/icon/perplexity-line)
+  static const IconData perplexityLine = RemixIconData(0xF5C2);
+
+  /// [poker-clubs-fill](https://remixicon.com/icon/poker-clubs-fill)
+  static const IconData pokerClubsFill = RemixIconData(0xF5C3);
+
+  /// [poker-clubs-line](https://remixicon.com/icon/poker-clubs-line)
+  static const IconData pokerClubsLine = RemixIconData(0xF5C4);
+
+  /// [poker-diamonds-fill](https://remixicon.com/icon/poker-diamonds-fill)
+  static const IconData pokerDiamondsFill = RemixIconData(0xF5C5);
+
+  /// [poker-diamonds-line](https://remixicon.com/icon/poker-diamonds-line)
+  static const IconData pokerDiamondsLine = RemixIconData(0xF5C6);
+
+  /// [poker-hearts-fill](https://remixicon.com/icon/poker-hearts-fill)
+  static const IconData pokerHeartsFill = RemixIconData(0xF5C7);
+
+  /// [poker-hearts-line](https://remixicon.com/icon/poker-hearts-line)
+  static const IconData pokerHeartsLine = RemixIconData(0xF5C8);
+
+  /// [poker-spades-fill](https://remixicon.com/icon/poker-spades-fill)
+  static const IconData pokerSpadesFill = RemixIconData(0xF5C9);
+
+  /// [poker-spades-line](https://remixicon.com/icon/poker-spades-line)
+  static const IconData pokerSpadesLine = RemixIconData(0xF5CA);
+
+  /// [safe-3-fill](https://remixicon.com/icon/safe-3-fill)
+  static const IconData safe3Fill = RemixIconData(0xF5CB);
+
+  /// [safe-3-line](https://remixicon.com/icon/safe-3-line)
+  static const IconData safe3Line = RemixIconData(0xF5CC);
+
   /// {@macro remix_ic}
   ///
   /// Only for testing
