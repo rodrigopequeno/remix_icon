@@ -9070,6 +9070,120 @@ class RemixIcon {
   /// [safe-3-line](https://remixicon.com/icon/safe-3-line)
   static const IconData safe3Line = RemixIconData(0xF5CC);
 
+  /// [accessibility-fill](https://remixicon.com/icon/accessibility-fill)
+  static const IconData accessibilityFill = RemixIconData(0xF5CD);
+
+  /// [accessibility-line](https://remixicon.com/icon/accessibility-line)
+  static const IconData accessibilityLine = RemixIconData(0xF5CE);
+
+  /// [alarm-add-fill](https://remixicon.com/icon/alarm-add-fill)
+  static const IconData alarmAddFill = RemixIconData(0xF5CF);
+
+  /// [alarm-add-line](https://remixicon.com/icon/alarm-add-line)
+  static const IconData alarmAddLine = RemixIconData(0xF5D0);
+
+  /// [arrow-down-long-fill](https://remixicon.com/icon/arrow-down-long-fill)
+  static const IconData arrowDownLongFill = RemixIconData(0xF5D1);
+
+  /// [arrow-down-long-line](https://remixicon.com/icon/arrow-down-long-line)
+  static const IconData arrowDownLongLine = RemixIconData(0xF5D2);
+
+  /// [arrow-left-down-long-fill](https://remixicon.com/icon/arrow-left-down-long-fill)
+  static const IconData arrowLeftDownLongFill = RemixIconData(0xF5D3);
+
+  /// [arrow-left-down-long-line](https://remixicon.com/icon/arrow-left-down-long-line)
+  static const IconData arrowLeftDownLongLine = RemixIconData(0xF5D4);
+
+  /// [arrow-left-long-fill](https://remixicon.com/icon/arrow-left-long-fill)
+  static const IconData arrowLeftLongFill = RemixIconData(0xF5D5);
+
+  /// [arrow-left-long-line](https://remixicon.com/icon/arrow-left-long-line)
+  static const IconData arrowLeftLongLine = RemixIconData(0xF5D6);
+
+  /// [arrow-left-up-long-fill](https://remixicon.com/icon/arrow-left-up-long-fill)
+  static const IconData arrowLeftUpLongFill = RemixIconData(0xF5D7);
+
+  /// [arrow-left-up-long-line](https://remixicon.com/icon/arrow-left-up-long-line)
+  static const IconData arrowLeftUpLongLine = RemixIconData(0xF5D8);
+
+  /// [arrow-right-down-long-fill](https://remixicon.com/icon/arrow-right-down-long-fill)
+  static const IconData arrowRightDownLongFill = RemixIconData(0xF5D9);
+
+  /// [arrow-right-down-long-line](https://remixicon.com/icon/arrow-right-down-long-line)
+  static const IconData arrowRightDownLongLine = RemixIconData(0xF5DA);
+
+  /// [arrow-right-long-fill](https://remixicon.com/icon/arrow-right-long-fill)
+  static const IconData arrowRightLongFill = RemixIconData(0xF5DB);
+
+  /// [arrow-right-long-line](https://remixicon.com/icon/arrow-right-long-line)
+  static const IconData arrowRightLongLine = RemixIconData(0xF5DC);
+
+  /// [arrow-right-up-long-fill](https://remixicon.com/icon/arrow-right-up-long-fill)
+  static const IconData arrowRightUpLongFill = RemixIconData(0xF5DD);
+
+  /// [arrow-right-up-long-line](https://remixicon.com/icon/arrow-right-up-long-line)
+  static const IconData arrowRightUpLongLine = RemixIconData(0xF5DE);
+
+  /// [arrow-up-long-fill](https://remixicon.com/icon/arrow-up-long-fill)
+  static const IconData arrowUpLongFill = RemixIconData(0xF5DF);
+
+  /// [arrow-up-long-line](https://remixicon.com/icon/arrow-up-long-line)
+  static const IconData arrowUpLongLine = RemixIconData(0xF5E0);
+
+  /// [chess-fill](https://remixicon.com/icon/chess-fill)
+  static const IconData chessFill = RemixIconData(0xF5E1);
+
+  /// [chess-line](https://remixicon.com/icon/chess-line)
+  static const IconData chessLine = RemixIconData(0xF5E2);
+
+  /// [diamond-fill](https://remixicon.com/icon/diamond-fill)
+  static const IconData diamondFill = RemixIconData(0xF5E3);
+
+  /// [diamond-line](https://remixicon.com/icon/diamond-line)
+  static const IconData diamondLine = RemixIconData(0xF5E4);
+
+  /// [diamond-ring-fill](https://remixicon.com/icon/diamond-ring-fill)
+  static const IconData diamondRingFill = RemixIconData(0xF5E5);
+
+  /// [diamond-ring-line](https://remixicon.com/icon/diamond-ring-line)
+  static const IconData diamondRingLine = RemixIconData(0xF5E6);
+
+  /// [figma-fill](https://remixicon.com/icon/figma-fill)
+  static const IconData figmaFill = RemixIconData(0xF5E7);
+
+  /// [figma-line](https://remixicon.com/icon/figma-line)
+  static const IconData figmaLine = RemixIconData(0xF5E8);
+
+  /// [firefox-browser-fill](https://remixicon.com/icon/firefox-browser-fill)
+  static const IconData firefoxBrowserFill = RemixIconData(0xF5E9);
+
+  /// [firefox-browser-line](https://remixicon.com/icon/firefox-browser-line)
+  static const IconData firefoxBrowserLine = RemixIconData(0xF5EA);
+
+  /// [jewelry-fill](https://remixicon.com/icon/jewelry-fill)
+  static const IconData jewelryFill = RemixIconData(0xF5EB);
+
+  /// [jewelry-line](https://remixicon.com/icon/jewelry-line)
+  static const IconData jewelryLine = RemixIconData(0xF5EC);
+
+  /// [multi-image-fill](https://remixicon.com/icon/multi-image-fill)
+  static const IconData multiImageFill = RemixIconData(0xF5ED);
+
+  /// [multi-image-line](https://remixicon.com/icon/multi-image-line)
+  static const IconData multiImageLine = RemixIconData(0xF5EE);
+
+  /// [no-credit-card-fill](https://remixicon.com/icon/no-credit-card-fill)
+  static const IconData noCreditCardFill = RemixIconData(0xF5EF);
+
+  /// [no-credit-card-line](https://remixicon.com/icon/no-credit-card-line)
+  static const IconData noCreditCardLine = RemixIconData(0xF5F0);
+
+  /// [service-bell-fill](https://remixicon.com/icon/service-bell-fill)
+  static const IconData serviceBellFill = RemixIconData(0xF5F1);
+
+  /// [service-bell-line](https://remixicon.com/icon/service-bell-line)
+  static const IconData serviceBellLine = RemixIconData(0xF5F2);
+
   /// {@macro remix_ic}
   ///
   /// Only for testing
