@@ -1,5 +1,9 @@
 If the version is not listed in this changelog, it means that there were no changes in the internal code of the package, only changes in the available icons. The icon changes can be accessed in [Releases](https://github.com/Remix-Design/RemixIcon/releases)
 
+## null
+
+[Release](https://github.com/Remix-Design/RemixIcon/releases/tag/vnull)
+
 ## 4.6.0
 
 [Release](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.6.0)
