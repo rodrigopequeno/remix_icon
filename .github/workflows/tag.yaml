@@ -1,0 +1,44 @@
+name: Tag on merge
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  create_tag:
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get version from pubspec.yaml
+        id: get_version
+        run: |
+          VERSION_LINE=$(grep '^version:' pubspec.yaml || true)
+          if [ -z "$VERSION_LINE" ]; then
+            echo "No version field found in pubspec.yaml" >&2
+            exit 1
+          fi
+          VERSION=$(echo "$VERSION_LINE" | sed 's/version:[[:space:]]*//; s/+.*//; s/"//g; s/[[:space:]]//g')
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+
+      - name: Create and push tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=v${{ steps.get_version.outputs.version }}
+          echo "Tag to create: $TAG"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists; skipping"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "v$TAG"
+          git push "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "refs/tags/$TAG"
