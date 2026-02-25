@@ -9696,6 +9696,7 @@ class RemixIcon {
 
   /// [connector-line](https://remixicon.com/icon/connector-line)
   static const IconData connectorLine = RemixIconData(0xF69D);
+
   /// {@macro remix_ic}
   ///
   /// Only for testing
