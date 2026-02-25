@@ -4,6 +4,10 @@ If the version is not listed in this changelog, it means that there were no chan
 
 [Release](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.9.1)
 
+## 4.8.0
+
+[Release](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.8.0)
+
 ## 4.7.0
 
 [Release](https://github.com/Remix-Design/RemixIcon/releases/tag/v4.7.0)
