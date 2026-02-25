@@ -9574,6 +9574,129 @@ class RemixIcon {
   /// [upwork-line](https://remixicon.com/icon/upwork-line)
   static const IconData upworkLine = RemixIconData(0xF674);
 
+  /// [brain-4-fill](https://remixicon.com/icon/brain-4-fill)
+  static const IconData brain4Fill = RemixIconData(0xF675);
+
+  /// [brain-4-line](https://remixicon.com/icon/brain-4-line)
+  static const IconData brain4Line = RemixIconData(0xF676);
+
+  /// [certificate-2-fill](https://remixicon.com/icon/certificate-2-fill)
+  static const IconData certificate2Fill = RemixIconData(0xF677);
+
+  /// [certificate-2-line](https://remixicon.com/icon/certificate-2-line)
+  static const IconData certificate2Line = RemixIconData(0xF678);
+
+  /// [certificate-fill](https://remixicon.com/icon/certificate-fill)
+  static const IconData certificateFill = RemixIconData(0xF679);
+
+  /// [certificate-line](https://remixicon.com/icon/certificate-line)
+  static const IconData certificateLine = RemixIconData(0xF67A);
+
+  /// [cookie-fill](https://remixicon.com/icon/cookie-fill)
+  static const IconData cookieFill = RemixIconData(0xF67B);
+
+  /// [cookie-line](https://remixicon.com/icon/cookie-line)
+  static const IconData cookieLine = RemixIconData(0xF67C);
+
+  /// [cursor-ai-fill](https://remixicon.com/icon/cursor-ai-fill)
+  static const IconData cursorAiFill = RemixIconData(0xF67D);
+
+  /// [cursor-ai-line](https://remixicon.com/icon/cursor-ai-line)
+  static const IconData cursorAiLine = RemixIconData(0xF67E);
+
+  /// [draw-fill](https://remixicon.com/icon/draw-fill)
+  static const IconData drawFill = RemixIconData(0xF67F);
+
+  /// [draw-line](https://remixicon.com/icon/draw-line)
+  static const IconData drawLine = RemixIconData(0xF680);
+
+  /// [ghost-4-fill](https://remixicon.com/icon/ghost-4-fill)
+  static const IconData ghost4Fill = RemixIconData(0xF681);
+
+  /// [ghost-4-line](https://remixicon.com/icon/ghost-4-line)
+  static const IconData ghost4Line = RemixIconData(0xF682);
+
+  /// [gitbook-fill](https://remixicon.com/icon/gitbook-fill)
+  static const IconData gitbookFill = RemixIconData(0xF683);
+
+  /// [gitbook-line](https://remixicon.com/icon/gitbook-line)
+  static const IconData gitbookLine = RemixIconData(0xF684);
+
+  /// [grok-ai-fill](https://remixicon.com/icon/grok-ai-fill)
+  static const IconData grokAiFill = RemixIconData(0xF685);
+
+  /// [grok-ai-line](https://remixicon.com/icon/grok-ai-line)
+  static const IconData grokAiLine = RemixIconData(0xF686);
+
+  /// [hand-2](https://remixicon.com/icon/hand-2)
+  static const IconData hand2 = RemixIconData(0xF687);
+
+  /// [megaphone-2-fill](https://remixicon.com/icon/megaphone-2-fill)
+  static const IconData megaphone2Fill = RemixIconData(0xF688);
+
+  /// [megaphone-2-line](https://remixicon.com/icon/megaphone-2-line)
+  static const IconData megaphone2Line = RemixIconData(0xF689);
+
+  /// [microsoft-copilot-fill](https://remixicon.com/icon/microsoft-copilot-fill)
+  static const IconData microsoftCopilotFill = RemixIconData(0xF68A);
+
+  /// [microsoft-copilot-line](https://remixicon.com/icon/microsoft-copilot-line)
+  static const IconData microsoftCopilotLine = RemixIconData(0xF68B);
+
+  /// [mosaic-fill](https://remixicon.com/icon/mosaic-fill)
+  static const IconData mosaicFill = RemixIconData(0xF68C);
+
+  /// [mosaic-line](https://remixicon.com/icon/mosaic-line)
+  static const IconData mosaicLine = RemixIconData(0xF68D);
+
+  /// [qr-scan-ai-fill](https://remixicon.com/icon/qr-scan-ai-fill)
+  static const IconData qrScanAiFill = RemixIconData(0xF68E);
+
+  /// [qr-scan-ai-line](https://remixicon.com/icon/qr-scan-ai-line)
+  static const IconData qrScanAiLine = RemixIconData(0xF68F);
+
+  /// [qwen-ai-fill](https://remixicon.com/icon/qwen-ai-fill)
+  static const IconData qwenAiFill = RemixIconData(0xF690);
+
+  /// [qwen-ai-line](https://remixicon.com/icon/qwen-ai-line)
+  static const IconData qwenAiLine = RemixIconData(0xF691);
+
+  /// [reddit-2-fill](https://remixicon.com/icon/reddit-2-fill)
+  static const IconData reddit2Fill = RemixIconData(0xF692);
+
+  /// [reddit-2-line](https://remixicon.com/icon/reddit-2-line)
+  static const IconData reddit2Line = RemixIconData(0xF693);
+
+  /// [sim-card-warning-fill](https://remixicon.com/icon/sim-card-warning-fill)
+  static const IconData simCardWarningFill = RemixIconData(0xF694);
+
+  /// [sim-card-warning-line](https://remixicon.com/icon/sim-card-warning-line)
+  static const IconData simCardWarningLine = RemixIconData(0xF695);
+
+  /// [space-ship-2-fill](https://remixicon.com/icon/space-ship-2-fill)
+  static const IconData spaceShip2Fill = RemixIconData(0xF696);
+
+  /// [space-ship-2-line](https://remixicon.com/icon/space-ship-2-line)
+  static const IconData spaceShip2Line = RemixIconData(0xF697);
+
+  /// [subreddit-fill](https://remixicon.com/icon/subreddit-fill)
+  static const IconData subredditFill = RemixIconData(0xF698);
+
+  /// [subreddit-line](https://remixicon.com/icon/subreddit-line)
+  static const IconData subredditLine = RemixIconData(0xF699);
+
+  /// [zhipu-ai-fill](https://remixicon.com/icon/zhipu-ai-fill)
+  static const IconData zhipuAiFill = RemixIconData(0xF69A);
+
+  /// [zhipu-ai-line](https://remixicon.com/icon/zhipu-ai-line)
+  static const IconData zhipuAiLine = RemixIconData(0xF69B);
+
+  /// [connector-fill](https://remixicon.com/icon/connector-fill)
+  static const IconData connectorFill = RemixIconData(0xF69C);
+
+  /// [connector-line](https://remixicon.com/icon/connector-line)
+  static const IconData connectorLine = RemixIconData(0xF69D);
+
   /// {@macro remix_ic}
   ///
   /// Only for testing
